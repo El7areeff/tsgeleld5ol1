@@ -135,7 +135,7 @@
   <div id="page2">
     <div class="container">
       <h1>تأكيد استخدام الاسكربت</h1>
-      <input type="text" id="codeInput" placeholder="أدخل ID الحساب الذي تم إنشاؤه باستخدام البروموكود 1x_1634658" maxlength="9">
+      <input type="text" id="codeInput" placeholder="أدخل ID الحساب الذي تم إنشاؤه باستخدام البروموكود 1x_1634658" maxlength="10">
       <p>
         <label>
           <input type="checkbox" id="termsCheckbox"> أوافق على الشروط
@@ -197,7 +197,7 @@
         return;
       }
 
-      if (!/^\d{9}$/.test(codeInput)) {
+      if (!/^\d{10}$/.test(codeInput)) {
         errorMessage.textContent = "تأكد من إدخال ID الحساب الصحيح الذي تم إنشاؤه بالبروموكود.";
         errorMessage.style.display = "block";
         return;
